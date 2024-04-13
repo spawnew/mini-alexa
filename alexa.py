@@ -16,6 +16,9 @@ def talk():
 
  
 while True :
+    engine.say('Buenas noches jefe')
+    engine.say('que deseas hacer')
+    engine.runAndWait()
     text = talk()
     
     if 'comprar' in text:
@@ -31,3 +34,8 @@ while True :
        engine.say('Hola como estas lucas que deseas hacer ')
        engine.runAndWait()
        text = talk()
+    if 'dormir' in text:
+        engine.say('apagando')
+        
+        engine.runAndWait()
+        text = talk()
